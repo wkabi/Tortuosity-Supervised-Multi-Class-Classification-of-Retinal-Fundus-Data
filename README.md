@@ -1,6 +1,7 @@
 Notes: 
 - This repository is not for commercial use/purpose. 
-- It can be used for research purpose (only). 
+- It can be used for research purpose (only).
+- If you utilize this repository that will lead to any publication, please cite this repository.
 - If you utilize this repository that will lead to any publication, please cite the following papers those are most relevant. Details can be found from my Google Scholar page (https://scholar.google.com/citations?user=3rrT0vgAAAAJ&hl=en).
 1. IDF21-0299 An automatic deep learning-based system for screening and management of DME.
 2. Automatic screening and progress with AI-assisted OCT in retinal macular oedema detection.
