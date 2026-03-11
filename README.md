@@ -3,6 +3,9 @@ This repository will help you to train, validate and test Tortuosity AI model fo
 
 It can also be adopted to train, validate and test any AI model for multi-class classification using 2D/3D data.
 
+Example (Training & Validating on Linux)
+![image]()
+
 Notes: 
 - This repository is not for commercial use/purpose. 
 - It can be used for research purpose (only).
