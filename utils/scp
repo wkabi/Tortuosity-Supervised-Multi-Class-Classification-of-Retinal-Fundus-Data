@@ -1,0 +1,38 @@
+- Connect to GTIX:
+sudo openvpn --remote diagnos.dnsalias.com --comp-lzo --dev tun --auth-user-pass --ca ~/.ssh/ca.crt --client --tls-version-min 1.0 --route 192.168.68.0 255.255.255.0 --cipher AES-256-CBC
+username: agaldran
+password: iab!i8Iejooku
+
+In another tab,
+
+GiganTIX:
+ssh agaldran@192.168.68.22
+
+GTIX:
+ssh agaldran@192.168.68.41
+
+
+- In GTIX:
+Edit get_data.py to set up the batch of images to be copied over. Up to 81610
+
+sudo /home/agaldran/anaconda3/envs/diagnos/bin/python get_data.py
+zip -r data/unprocessed_images13333_16666.zip data/unprocessed_images13333_16666/
+rm -r data/unprocessed_images13333_16666/
+
+- Copy files from GTIX to my computer:
+scp agaldran@192.168.68.41:/home/agaldran/DIAGNOS/experimental/data/unprocessed_images13333_16666.zip /home/agaldran/Desktop/DA/DIAGNOS/data/diagnos_unprocessed
+
+- Local: copy files over to Landshut
+scp -P 443 -i ~/.ssh/id_ed25519 unprocessed_images13333_16666.zip agaldran@landshut.bournemouth.ac.uk:~/
+
+- Enter Landshut and transfer files to computer:
+scp unprocessed_images13333_16666.zip agaldran@10.121.1.215:~/
+
+- Unzip and preprocess:
+tmux a -t fovnet
+python crop_to_fovs.py --input_folder data/images_raw/train --output_folder data/images_896_same_fov --resize 896,896 --keep_fov_angle False
+
+
+Copy files to gigantix
+scp cropped_images.zip agaldran@192.168.68.22:~/
+
