@@ -3,7 +3,7 @@ This repository will help you to train, validate and test Tortuosity AI model fo
 
 It can also be adopted to train, validate and test any AI model for multi-class classification using 2D/3D data.
 
-Example (Training & Validating on Linux)
+Example (Training & Validating Tortuosity AI model on Linux)
 ![image](https://github.com/wkabi/Tortuosity-Supervised-Multi-Class-Classification-of-Retinal-Fundus-Data/blob/main/Training_bit_resnext101_1_sgd_cy10by3_4cls_Pic1.png)
 
 Notes: 
