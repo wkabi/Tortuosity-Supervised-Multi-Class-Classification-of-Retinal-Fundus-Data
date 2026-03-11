@@ -7,7 +7,7 @@ Example (Training & Validating Tortuosity AI model on Linux)
 
 ![image](https://github.com/wkabi/Tortuosity-Supervised-Multi-Class-Classification-of-Retinal-Fundus-Data/blob/main/Training_bit_resnext101_1_sgd_cy10by3_4cls_Pic1.png)
 
-Notes: 
+Important Notes: 
 - This repository is not for commercial use/purpose. 
 - It can be used for research purpose (only).
 - If you utilize this repository that will lead to any publication, please cite this repository.
